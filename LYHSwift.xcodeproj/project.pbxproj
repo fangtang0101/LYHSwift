@@ -14,6 +14,9 @@
 		464713E01D4ED2B20033D439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464713DE1D4ED2B20033D439 /* LaunchScreen.storyboard */; };
 		464713EB1D4ED2B20033D439 /* LYHSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464713EA1D4ED2B20033D439 /* LYHSwiftTests.swift */; };
 		464713F61D4ED2B30033D439 /* LYHSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464713F51D4ED2B30033D439 /* LYHSwiftUITests.swift */; };
+		464714051D501D870033D439 /* LYHRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464714041D501D870033D439 /* LYHRootViewController.swift */; };
+		464714071D501D9F0033D439 /* LYHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464714061D501D9F0033D439 /* LYHView.swift */; };
+		4647140E1D50224A0033D439 /* LYHNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647140D1D50224A0033D439 /* LYHNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		464713F11D4ED2B30033D439 /* LYHSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYHSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		464713F51D4ED2B30033D439 /* LYHSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYHSwiftUITests.swift; sourceTree = "<group>"; };
 		464713F71D4ED2B30033D439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464714041D501D870033D439 /* LYHRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRootViewController.swift; sourceTree = "<group>"; };
+		464714061D501D9F0033D439 /* LYHView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHView.swift; sourceTree = "<group>"; };
+		4647140D1D50224A0033D439 /* LYHNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		464713D41D4ED2B20033D439 /* LYHSwift */ = {
 			isa = PBXGroup;
 			children = (
+				464714081D5021E10033D439 /* news */,
+				464714031D501D450033D439 /* publish */,
 				464713D51D4ED2B20033D439 /* AppDelegate.swift */,
 				464713D71D4ED2B20033D439 /* ViewController.swift */,
 				464713D91D4ED2B20033D439 /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				464713F71D4ED2B30033D439 /* Info.plist */,
 			);
 			path = LYHSwiftUITests;
+			sourceTree = "<group>";
+		};
+		464714031D501D450033D439 /* publish */ = {
+			isa = PBXGroup;
+			children = (
+				464714041D501D870033D439 /* LYHRootViewController.swift */,
+				464714061D501D9F0033D439 /* LYHView.swift */,
+			);
+			path = publish;
+			sourceTree = "<group>";
+		};
+		464714081D5021E10033D439 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				4647140D1D50224A0033D439 /* LYHNewsViewController.swift */,
+			);
+			path = news;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464714071D501D9F0033D439 /* LYHView.swift in Sources */,
+				4647140E1D50224A0033D439 /* LYHNewsViewController.swift in Sources */,
+				464714051D501D870033D439 /* LYHRootViewController.swift in Sources */,
 				464713D81D4ED2B20033D439 /* ViewController.swift in Sources */,
 				464713D61D4ED2B20033D439 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +512,7 @@
 				464713FC1D4ED2B30033D439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		464713FD1D4ED2B30033D439 /* Build configuration list for PBXNativeTarget "LYHSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +521,7 @@
 				464713FF1D4ED2B30033D439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		464714001D4ED2B30033D439 /* Build configuration list for PBXNativeTarget "LYHSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +530,7 @@
 				464714021D4ED2B30033D439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
