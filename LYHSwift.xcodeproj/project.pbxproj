@@ -17,6 +17,8 @@
 		464714051D501D870033D439 /* LYHRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464714041D501D870033D439 /* LYHRootViewController.swift */; };
 		464714071D501D9F0033D439 /* LYHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464714061D501D9F0033D439 /* LYHView.swift */; };
 		4647140E1D50224A0033D439 /* LYHNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647140D1D50224A0033D439 /* LYHNewsViewController.swift */; };
+		4F1124CE1D5C4D2D003294F8 /* LYHNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1124CC1D5C4D2D003294F8 /* LYHNewsCell.swift */; };
+		4F1124CF1D5C4D2D003294F8 /* LYHNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F1124CD1D5C4D2D003294F8 /* LYHNewsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		464714041D501D870033D439 /* LYHRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHRootViewController.swift; sourceTree = "<group>"; };
 		464714061D501D9F0033D439 /* LYHView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHView.swift; sourceTree = "<group>"; };
 		4647140D1D50224A0033D439 /* LYHNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHNewsViewController.swift; sourceTree = "<group>"; };
+		4F1124CC1D5C4D2D003294F8 /* LYHNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHNewsCell.swift; sourceTree = "<group>"; };
+		4F1124CD1D5C4D2D003294F8 /* LYHNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYHNewsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				4647140D1D50224A0033D439 /* LYHNewsViewController.swift */,
+				4F1124CC1D5C4D2D003294F8 /* LYHNewsCell.swift */,
+				4F1124CD1D5C4D2D003294F8 /* LYHNewsCell.xib */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 			files = (
 				464713E01D4ED2B20033D439 /* LaunchScreen.storyboard in Resources */,
 				464713DD1D4ED2B20033D439 /* Assets.xcassets in Resources */,
+				4F1124CF1D5C4D2D003294F8 /* LYHNewsCell.xib in Resources */,
 				464713DB1D4ED2B20033D439 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +290,7 @@
 			files = (
 				464714071D501D9F0033D439 /* LYHView.swift in Sources */,
 				4647140E1D50224A0033D439 /* LYHNewsViewController.swift in Sources */,
+				4F1124CE1D5C4D2D003294F8 /* LYHNewsCell.swift in Sources */,
 				464714051D501D870033D439 /* LYHRootViewController.swift in Sources */,
 				464713D81D4ED2B20033D439 /* ViewController.swift in Sources */,
 				464713D61D4ED2B20033D439 /* AppDelegate.swift in Sources */,

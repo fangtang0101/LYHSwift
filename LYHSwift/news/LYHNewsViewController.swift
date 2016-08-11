@@ -18,10 +18,10 @@ class LYHNewsViewController: LYHRootViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //数组的初始化
+        self.arrayList = NSMutableArray();
         
-       
-
-        // Do any additional setup after loading the view.
+        
     }
     
     
@@ -38,12 +38,6 @@ class LYHNewsViewController: LYHRootViewController {
         let cell = UITableViewCell.init();
         return cell;
     }
-
-    
-  
-   
-    
-    
 
     /*
     // MARK: - Navigation
