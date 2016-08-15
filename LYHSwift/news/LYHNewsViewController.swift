@@ -8,45 +8,43 @@
 
 import UIKit
 
+let homeCellID = "LYHNewsCell"
+
+let HeightCell:CGFloat = 102
+
+
 class LYHNewsViewController: LYHRootViewController {
     
     
     @IBOutlet weak var tableViewList: UITableView!
     var arrayList:NSMutableArray!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         //数组的初始化
         self.arrayList = NSMutableArray();
-        
-        
+        title = "首页";
+        navigationController?.navigationBar.translucent = false;
+        setupTableView();
     }
     
+    func setupTableView() {
+        tableViewList.rowHeight = HeightCell
+        tableViewList.separatorStyle = .None
+        tableViewList.scrollIndicatorInsets = tableViewList.contentInset
+        let nib = UINib(nibName: String(LYHNewsCell), bundle: nil)
+        tableViewList.registerNib(nib, forCellReuseIdentifier: homeCellID)
+    }
     
- // MARK: - tableViewDelegate 
+    // MARK: - tableViewDelegate
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-      return  self.arrayList.count;
+        return 4;
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 44;
-    };
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(homeCellID) as! LYHNewsCell
+        cell.selectionStyle = .None
+        return cell
+    }
     
-     func cellForRowAtIndexPath(indexPath: NSIndexPath) -> UITableViewCell? {
-        let cell = UITableViewCell.init();
-        return cell;
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

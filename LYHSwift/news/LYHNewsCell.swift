@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol YMHomeCellDelegate: NSObjectProtocol {
+    func homeCellDidClickedFavoriteButton(button: UIButton)
+}
+
 class LYHNewsCell: UITableViewCell {
 
     override func awakeFromNib() {
